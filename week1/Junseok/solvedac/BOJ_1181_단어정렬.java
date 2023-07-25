@@ -28,12 +28,13 @@ public class BOJ_1181_단어정렬 {
 					temp = result[j];
 					result[j] = result[j-1];
 					result[j-1] = temp;
+					System.out.println("lenDiff");
 				}
 				if(result[j].length() == result[j-1].length()) {
 					char[] char1 = result[j-1].toCharArray();
 					char[] char2 = result[j].toCharArray();
-					for(int k = 0; i < char1.length; i++) {
-						if((int)(char1[i]) > (int)(char2[i])) {
+					for(int k = 0; k < char1.length; k++) {
+						if((int)(char1[k]) > (int)(char2[k])) {
 							isPre = true;
 							break;
 						}
@@ -45,9 +46,11 @@ public class BOJ_1181_단어정렬 {
 						result[j-1] = temp;
 						System.out.println(Arrays.toString(result));						
 					}
+					System.out.println("lenSame");
 				}
 				if(result[j].equals(result[j-1])) {
 					result[j] = "";
+					System.out.println("dup");
 				}
 			}
 		}
@@ -64,20 +67,5 @@ public class BOJ_1181_단어정렬 {
 		System.out.println(Arrays.toString(reresult));
 		
 	}
-	
-//	public static boolean isPre(String a, String b) {
-//		boolean result = false;
-//		
-//		char[] char1 = a.toCharArray();
-//		char[] char2 = b.toCharArray();
-//		for(int i = 0; i < a.length(); i++) {
-//			if((int)(char1[i]) > (int)(char2[i])) {
-//				result = true;
-//				break;
-//			}
-//		}
-//		
-//		return result;
-//	}
 
 }
