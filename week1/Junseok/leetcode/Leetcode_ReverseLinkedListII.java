@@ -1,4 +1,4 @@
-package week1.Junseok.solvedac;
+package week1.Junseok.leetcode;
 
 import java.util.Stack;
 

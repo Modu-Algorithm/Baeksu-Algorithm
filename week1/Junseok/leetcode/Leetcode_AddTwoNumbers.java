@@ -1,4 +1,4 @@
-package week1.Junseok.solvedac;
+package week1.Junseok.leetcode;
 
 public class Leetcode_AddTwoNumbers {
 	
@@ -9,7 +9,7 @@ public class Leetcode_AddTwoNumbers {
 		
 		while(l1 != null || l2 != null || over == 1) {
 			int sum = 0;
-			if(l2 != null) {
+			if(l1 != null) {
 				sum += l1.val;
 				l1 = l1.next;
 			}
