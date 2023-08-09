@@ -36,6 +36,7 @@ public class KthSmallestElementinaSortedMatrix {
         			break;
         		}
         	}
+        	
 //        	System.out.println(lo + ", " + hi);
 //         	System.out.println("count=" + count);
         	if(count==k) return maxNum;
